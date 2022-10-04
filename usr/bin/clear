@@ -1,0 +1,5 @@
+#!/bin/python3
+
+import sys
+
+sys.stdout.write("\x1b\x5b\x48\x1b\x5b\x32\x4a")

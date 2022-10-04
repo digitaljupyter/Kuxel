@@ -1,0 +1,6 @@
+#!/usr/local/bin/salmon-linux-x86_64 -o
+
+(set arg (truncate arg 2 *))
+
+(each arg
+  (print @))

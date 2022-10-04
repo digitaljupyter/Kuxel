@@ -1,0 +1,16 @@
+#!/usr/local/bin/salmon-linux-x86_64 -o
+
+(set arg (truncate arg 2 *))
+
+(require "kuxel-repl")
+
+(set dir (position arg 0))
+
+(defun list-and-print (dire)
+  (each (getfiles dir)
+    (print @)))
+
+(case (= dir nil)
+  (list-and-print ".")
+  (list-and-print dir))
+
